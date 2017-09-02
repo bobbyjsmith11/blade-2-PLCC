@@ -1,0 +1,169 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:diode
+LIBS:led_strip-cache
+EELAYER 25 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 1
+Title "LED Blade"
+Date ""
+Rev "X1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6550 3150 6550 3200
+Wire Wire Line
+	5800 3150 5800 3200
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 59A4D1E2
+P 6550 3150
+F 0 "#FLG06" H 6550 3245 50  0001 C CNN
+F 1 "PWR_FLAG" H 6550 3330 50  0000 C CNN
+F 2 "" H 6550 3150 50  0000 C CNN
+F 3 "" H 6550 3150 50  0000 C CNN
+	1    6550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 59A4D1E3
+P 6550 3200
+F 0 "#PWR07" H 6550 2950 50  0001 C CNN
+F 1 "GND" H 6550 3050 50  0000 C CNN
+F 2 "" H 6550 3200 50  0000 C CNN
+F 3 "" H 6550 3200 50  0000 C CNN
+	1    6550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR08
+U 1 1 59A4D1E4
+P 5800 3200
+F 0 "#PWR08" H 5800 3050 50  0001 C CNN
+F 1 "VDD" H 5800 3350 50  0000 C CNN
+F 2 "" H 5800 3200 50  0000 C CNN
+F 3 "" H 5800 3200 50  0000 C CNN
+	1    5800 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 59A4D1E5
+P 5800 3150
+F 0 "#FLG09" H 5800 3245 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 3330 50  0000 C CNN
+F 2 "" H 5800 3150 50  0000 C CNN
+F 3 "" H 5800 3150 50  0000 C CNN
+	1    5800 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8650 4850
+$Comp
+L R R?
+U 1 1 59AADD53
+P 6400 4550
+F 0 "R?" V 6480 4550 50  0000 C CNN
+F 1 "511" V 6400 4550 50  0000 C CNN
+F 2 "" V 6330 4550 50  0001 C CNN
+F 3 "" H 6400 4550 50  0001 C CNN
+F 4 "~" H 6400 4550 60  0001 C CNN "Manufacturer"
+F 5 "~" H 6400 4550 60  0001 C CNN "Manufacturer Part Number"
+F 6 "0805" H 6400 4550 60  0001 C CNN "Package"
+F 7 "RES, 0805, 511, 1%" H 6400 4550 60  0001 C CNN "Description"
+F 8 "True" H 6400 4550 60  0001 C CNN "Fitted"
+F 9 "~" H 6400 4550 60  0001 C CNN "Notes"
+	1    6400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 59AADFAA
+P 6400 4900
+F 0 "D?" H 6400 5000 50  0000 C CNN
+F 1 "LED" H 6400 4800 50  0000 C CNN
+F 2 "" H 6400 4900 50  0001 C CNN
+F 3 "" H 6400 4900 50  0001 C CNN
+	1    6400 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 59AAE06F
+P 6650 4900
+F 0 "R?" V 6730 4900 50  0000 C CNN
+F 1 "0" V 6650 4900 50  0000 C CNN
+F 2 "" V 6580 4900 50  0001 C CNN
+F 3 "" H 6650 4900 50  0001 C CNN
+F 4 "~" H 6650 4900 60  0001 C CNN "Manufacturer"
+F 5 "~" H 6650 4900 60  0001 C CNN "Manufacturer Part Number"
+F 6 "0805" H 6650 4900 60  0001 C CNN "Package"
+F 7 "RES, 0805, JUMPER" H 6650 4900 60  0001 C CNN "Description"
+F 8 "True" H 6650 4900 60  0001 C CNN "Fitted"
+F 9 "~" H 6650 4900 60  0001 C CNN "Notes"
+	1    6650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 59AAE2E6
+P 6700 4250
+F 0 "#PWR?" H 6700 4100 50  0001 C CNN
+F 1 "VDD" H 6700 4400 50  0000 C CNN
+F 2 "" H 6700 4250 50  0000 C CNN
+F 3 "" H 6700 4250 50  0000 C CNN
+	1    6700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59AAE340
+P 6400 5300
+F 0 "R?" V 6480 5300 50  0000 C CNN
+F 1 "0" V 6400 5300 50  0000 C CNN
+F 2 "" V 6330 5300 50  0001 C CNN
+F 3 "" H 6400 5300 50  0001 C CNN
+F 4 "~" H 6400 5300 60  0001 C CNN "Manufacturer"
+F 5 "~" H 6400 5300 60  0001 C CNN "Manufacturer Part Number"
+F 6 "0805" H 6400 5300 60  0001 C CNN "Package"
+F 7 "RES, 0805, JUMPER" H 6400 5300 60  0001 C CNN "Description"
+F 8 "DNF" V 6300 5300 60  0000 C CNB "Fitted"
+F 9 "~" H 6400 5300 60  0001 C CNN "Notes"
+	1    6400 5300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
